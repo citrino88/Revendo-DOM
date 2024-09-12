@@ -49,14 +49,14 @@ function variarClasse(){
     
     if(estado == 'apagada'){
 
-        lampada.setAttribute('src','./midia/img/acesa.png');
+        lampada.setAttribute('src','../midia/img/acesa.png');
         estado='acesa';
         btnVariar.textContent = 'Apagar';
         body.classList.toggle('acesa');
 
     }else{
 
-        lampada.setAttribute('src','./midia/img/apagada.png');
+        lampada.setAttribute('src','../midia/img/apagada.png');
         estado = 'apagada';
         btnVariar.textContent = 'Acender';
         body.classList.toggle('acesa');
@@ -84,15 +84,15 @@ function escolheuTesoura(){
     computador = Math.round(Math.random()*10);
     
     if(computador <= 3){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/tesoura.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/tesoura.png" width="50">';
         resposta.setAttribute('class', 'empate');
         tesoura.setAttribute('class', 'empate');
     } else if(computador <= 6){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/pedra.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/pedra.png" width="50">';
         resposta.setAttribute('class', 'ganhou');
         tesoura.setAttribute('class', 'perdeu');
     }else{ 
-        resposta.innerHTML='<img src="./midia/img/jokenpo/papel.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/papel.png" width="50">';
         resposta.setAttribute('class', 'perdeu');
         tesoura.setAttribute('class', 'ganhou');
     }
@@ -106,15 +106,15 @@ function escolheuPedra(){
     computador = Math.round(Math.random()*10);
 
     if(computador <= 3){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/tesoura.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/tesoura.png" width="50">';
         resposta.setAttribute('class', 'perdeu');
         pedra.setAttribute('class', 'ganhou');
     } else if(computador <= 6){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/pedra.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/pedra.png" width="50">';
         resposta.setAttribute('class', 'empate');
         pedra.setAttribute('class', 'empate');
     }else{ 
-        resposta.innerHTML='<img src="./midia/img/jokenpo/papel.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/papel.png" width="50">';
         resposta.setAttribute('class', 'ganhou');
         pedra.setAttribute('class', 'perdeu');
     }
@@ -128,15 +128,15 @@ function escolheuPapel(){
     computador = Math.round(Math.random()*10);
 
     if(computador <= 3){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/tesoura.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/tesoura.png" width="50">';
         resposta.setAttribute('class', 'ganhou');
         papel.setAttribute('class', 'perdeu');
     } else if(computador <= 6){
-        resposta.innerHTML='<img src="./midia/img/jokenpo/pedra.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/pedra.png" width="50">';
         resposta.setAttribute('class', 'perdeu');
         papel.setAttribute('class', 'ganhou');
     }else{ 
-        resposta.innerHTML='<img src="./midia/img/jokenpo/papel.png" width="50">';
+        resposta.innerHTML='<img src="../midia/img/jokenpo/papel.png" width="50">';
         resposta.setAttribute('class', 'empate');
         papel.setAttribute('class', 'empate');
     }
