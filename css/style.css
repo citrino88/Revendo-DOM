@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.swiper {
+    width: 50vw;
+    height: 300px;
+  }
+
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: chocolate;
+}
+
+main{ 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.container{ 
+    background-color:bisque; 
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+
+.content{
+    padding: 30px;
+    border: 3px dashed rgba(210,105,30,.5);
+    text-align: center;
+}
+
+.content *{
+    margin: 10px 0;
+}
+
+.content h1{ 
+  font-size: 3rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tituloFundoLaranja{
+    background-color: orange;
+    padding: 10px;    
+}
+
+.tituloFundoRosa{
+    background-color: rgb(255, 0, 183);
+    padding: 10px;    
+}
+
+.tituloVermelho{ 
+    color:red;
+}
+
+.acesa{
+    background-color: aqua;
+}
+
+#jokenpo img{
+    margin: 0px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#jokenpo img:hover{
+    border: 2px solid brown;
+}
+
+.ganhou{
+    background-color: rgb(179, 233, 179);
+}
+
+.empate{
+    background-color: antiquewhite;
+}
+
+.perdeu{
+    background-color: rgb(255, 187, 187);
+}
