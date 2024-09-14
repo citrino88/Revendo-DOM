@@ -52,7 +52,7 @@ btnTrocar.addEventListener('click', trocar);
 
 function variar()   {
     
-    titulo.classList.add('tituloVermelho');
+    titulo.classList.toggle('tituloVermelho');
 }
 
 const btnVariar = document.querySelector('#variarClasse');
