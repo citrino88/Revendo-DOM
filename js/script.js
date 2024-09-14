@@ -13,6 +13,7 @@ titulo.addEventListener('dblclick', ()=> alert('teste') ); //dbl = double click
 
 /* ----------------
 do HTML: Nós de atributos
+    >> pegarClasse, usando evento com botão
    ---------------- */
 
 const titulo = document.querySelector('#titulo');
@@ -24,3 +25,35 @@ function pegarClasse() {
 
 const btnClasse = document.querySelector('#pegarClasse'); // Encontrando o botão no DOM
 btnClasse.addEventListener('click', pegarClasse); // Adicionando evento click
+
+
+/* >> verificarClasse, usando evento com botão
+   ---------------- */
+
+function verificar() {
+    resposta.textContent = titulo.hasAttribute('class');
+}  
+
+const btnVerificar = document.querySelector('#verificarClasse');
+btnVerificar.addEventListener('click', verificar);
+
+/* >> trocarClasse, usando evento com botão
+   ---------------- */
+
+function trocar() {
+    titulo.setAttribute('class', 'tituloFundoRosa');
+} 
+
+const btnTrocar = document.querySelector('#trocarClasse');
+btnTrocar.addEventListener('click', trocar);
+   
+/* >> variarClasse, usando evento com botão
+   ---------------- */   
+
+function variar()   {
+    
+    titulo.classList.remove(titulo.getAttribute('class'));
+}
+
+const btnVariar = document.querySelector('#variarClasse');
+btnVariar.addEventListener('click', variar);
