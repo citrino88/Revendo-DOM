@@ -10,3 +10,17 @@ titulo.addEventListener('dblclick', ()=> alert('teste') ); //dbl = double click
 
 
  */
+
+/* ----------------
+do HTML: Nós de atributos
+   ---------------- */
+
+const titulo = document.querySelector('#titulo');
+const resposta = document.querySelector('#respostaAtributo');
+
+function pegarClasse() {
+    resposta.textContent = titulo.getAttribute('class');
+}
+
+const btnClasse = document.querySelector('#pegarClasse'); // Encontrando o botão no DOM
+btnClasse.addEventListener('click', pegarClasse); // Adicionando evento click
