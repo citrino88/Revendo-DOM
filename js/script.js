@@ -77,20 +77,26 @@ if (varia.textContent == "Acender"){
 }
 }); */
 
-var estado = 'apagada';
+var estado = 'ap';
 function alterarLampada(){
     const lampada = document.querySelector('#lampada');
     const body = document.querySelector('body');
 
     if(estado == 'apagada'){
+        lampada.setAttribute('src', 'midia/img/apagada.png');
+        body.classList.toggle('acesa');
         btnVariar.textContent = 'Acender';
         estado = 'aceso';
     }else{
+        lampada.setAttribute('src', 'midia/img/acesa.png');
+        body.classList.toggle('acesa');
         btnVariar.textContent = 'Apagar';
         estado = 'apagada';
     }
     
 }
+const btnVariar = document.querySelector("#variar");
+btnVariar.addEventListener('click', alterarLampada);
 
 /* >> Desafio Jokempô
    ---------------- */
@@ -98,4 +104,11 @@ function alterarLampada(){
 const tesoura = document.querySelector('#tesoura');
 const pedra = document.querySelector('#pedra');
 const papel = document.querySelector('#papel');
-const respostaJokempo = document.querySelector('#respostaJokempo');
+const respostaJogo = document.querySelector('#respostaJokempo');
+
+
+function resp() {    
+    respostaJogo.innerHTML = "<img id='papel' src='\midia/img/jokenpo/papel.png\' width=\'50\' alt=\'papel\'>")
+    //respostaJogo.setAttribute('src', 'midia/img/jokenpo/papel.png');
+}
+respostaJogo.addEventListener("click", resp);  
